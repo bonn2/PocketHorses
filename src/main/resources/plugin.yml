@@ -1,0 +1,5 @@
+name: PocketHorses
+version: '${project.version}'
+main: com.bonn2.pockethorses.PocketHorses
+api-version: 1.18
+description: Allows you to carry horses and other readable mobs in your pocket.
