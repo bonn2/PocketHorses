@@ -18,7 +18,7 @@ public final class PocketHorses extends JavaPlugin {
         getLogger().info("Initializing Config");
         File configyml = new File(getDataFolder() + File.separator + "config.yml");
         if (!configyml.exists()) { // Checks if config file exists
-            getLogger().warning("No Config.yml found, making a new one!");
+            getLogger().warning("No config.yml found, making a new one!");
             saveResource("config.yml", false);
         }
 
