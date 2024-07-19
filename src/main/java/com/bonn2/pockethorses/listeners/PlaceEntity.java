@@ -1,8 +1,8 @@
 package com.bonn2.pockethorses.listeners;
 
 import com.bonn2.pockethorses.PocketHorses;
-import de.tr7zw.changeme.nbtapi.NBTContainer;
-import de.tr7zw.changeme.nbtapi.NBTEntity;
+import de.tr7zw.nbtapi.NBTContainer;
+import de.tr7zw.nbtapi.NBTEntity;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;

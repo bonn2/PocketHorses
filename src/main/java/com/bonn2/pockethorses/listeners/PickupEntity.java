@@ -1,6 +1,6 @@
 package com.bonn2.pockethorses.listeners;
 
-import de.tr7zw.changeme.nbtapi.NBTEntity;
+import de.tr7zw.nbtapi.NBTEntity;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
