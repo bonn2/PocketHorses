@@ -58,8 +58,8 @@ public class PlaceEntity implements Listener {
         Entity entity;
         switch (Objects.requireNonNull(item.getItemMeta().getPersistentDataContainer().get(typeKey, PersistentDataType.STRING))) {
             case "HORSE" -> entity = player.getWorld().spawnEntity(spawnLocation, EntityType.HORSE);
-            case "SKELETONHORSE" -> entity = player.getWorld().spawnEntity(spawnLocation, EntityType.SKELETON_HORSE);
-            case "ZOMBIEHORSE" -> entity = player.getWorld().spawnEntity(spawnLocation, EntityType.ZOMBIE_HORSE);
+            case "SKELETON_HORSE" -> entity = player.getWorld().spawnEntity(spawnLocation, EntityType.SKELETON_HORSE);
+            case "ZOMBIE_HORSE" -> entity = player.getWorld().spawnEntity(spawnLocation, EntityType.ZOMBIE_HORSE);
             case "DONKEY" -> entity = player.getWorld().spawnEntity(spawnLocation, EntityType.DONKEY);
             case "MULE" -> entity = player.getWorld().spawnEntity(spawnLocation, EntityType.MULE);
             case "STRIDER" -> {
@@ -89,3 +89,4 @@ public class PlaceEntity implements Listener {
         player.getInventory().setItemInMainHand(new ItemStack(Material.AIR));
     }
 }
+

@@ -87,7 +87,7 @@ public class PickupEntity implements Listener {
 
                 // Set persistent data in temp item meta
                 ItemMeta meta = saddle.getItemMeta();
-                meta.getPersistentDataContainer().set(typeKey, PersistentDataType.STRING, "SKELETONHORSE");
+                meta.getPersistentDataContainer().set(typeKey, PersistentDataType.STRING, "SKELETON_HORSE");
                 meta.getPersistentDataContainer().set(dataKey, PersistentDataType.STRING, nbtHorse.toString());
                 meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
                 meta.addEnchant(Enchantment.WATER_WORKER, 1, false);
@@ -122,7 +122,7 @@ public class PickupEntity implements Listener {
 
                 // Set persistent data in temp item meta
                 ItemMeta meta = saddle.getItemMeta();
-                meta.getPersistentDataContainer().set(typeKey, PersistentDataType.STRING, "ZOMBIEHORSE");
+                meta.getPersistentDataContainer().set(typeKey, PersistentDataType.STRING, "ZOMBIE_HORSE");
                 meta.getPersistentDataContainer().set(dataKey, PersistentDataType.STRING, nbtHorse.toString());
                 meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
                 meta.addEnchant(Enchantment.WATER_WORKER, 1, false);
