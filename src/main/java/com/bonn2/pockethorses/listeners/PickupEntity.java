@@ -53,7 +53,7 @@ public class PickupEntity implements Listener {
                 meta.getPersistentDataContainer().set(typeKey, PersistentDataType.STRING, "HORSE");
                 meta.getPersistentDataContainer().set(dataKey, PersistentDataType.STRING, nbtHorse.toString());
                 meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-                meta.addEnchant(Enchantment.DURABILITY, 1, false);
+                meta.addEnchant(Enchantment.UNBREAKING, 1, false);
 
                 try {
                     meta.displayName(Component.text(horse.getCustomName()));
@@ -90,7 +90,7 @@ public class PickupEntity implements Listener {
                 meta.getPersistentDataContainer().set(typeKey, PersistentDataType.STRING, "SKELETON_HORSE");
                 meta.getPersistentDataContainer().set(dataKey, PersistentDataType.STRING, nbtHorse.toString());
                 meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-                meta.addEnchant(Enchantment.DURABILITY, 1, false);
+                meta.addEnchant(Enchantment.UNBREAKING, 1, false);
 
                 try {
                     meta.displayName(Component.text(horse.getCustomName()));
@@ -125,7 +125,7 @@ public class PickupEntity implements Listener {
                 meta.getPersistentDataContainer().set(typeKey, PersistentDataType.STRING, "ZOMBIE_HORSE");
                 meta.getPersistentDataContainer().set(dataKey, PersistentDataType.STRING, nbtHorse.toString());
                 meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-                meta.addEnchant(Enchantment.DURABILITY, 1, false);
+                meta.addEnchant(Enchantment.UNBREAKING, 1, false);
 
                 try {
                     meta.displayName(Component.text(horse.getCustomName()));
@@ -166,7 +166,7 @@ public class PickupEntity implements Listener {
                 meta.getPersistentDataContainer().set(typeKey, PersistentDataType.STRING, "DONKEY");
                 meta.getPersistentDataContainer().set(dataKey, PersistentDataType.STRING, nbtHorse.toString());
                 meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-                meta.addEnchant(Enchantment.DURABILITY, 1, false);
+                meta.addEnchant(Enchantment.UNBREAKING, 1, false);
 
                 try {
                     meta.displayName(Component.text(horse.getCustomName()));
@@ -207,7 +207,7 @@ public class PickupEntity implements Listener {
                 meta.getPersistentDataContainer().set(typeKey, PersistentDataType.STRING, "MULE");
                 meta.getPersistentDataContainer().set(dataKey, PersistentDataType.STRING, nbtHorse.toString());
                 meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-                meta.addEnchant(Enchantment.DURABILITY, 1, false);
+                meta.addEnchant(Enchantment.UNBREAKING, 1, false);
 
                 try {
                     meta.displayName(Component.text(horse.getCustomName()));
@@ -237,7 +237,7 @@ public class PickupEntity implements Listener {
                 meta.getPersistentDataContainer().set(typeKey, PersistentDataType.STRING, "STRIDER");
                 meta.getPersistentDataContainer().set(dataKey, PersistentDataType.STRING, nbtStrider.toString());
                 meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-                meta.addEnchant(Enchantment.DURABILITY, 1, false);
+                meta.addEnchant(Enchantment.UNBREAKING, 1, false);
 
                 try {
                     meta.displayName(Component.text(strider.getCustomName()));
@@ -267,7 +267,7 @@ public class PickupEntity implements Listener {
                 meta.getPersistentDataContainer().set(typeKey, PersistentDataType.STRING, "PIG");
                 meta.getPersistentDataContainer().set(dataKey, PersistentDataType.STRING, nbtStrider.toString());
                 meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-                meta.addEnchant(Enchantment.DURABILITY, 1, false);
+                meta.addEnchant(Enchantment.UNBREAKING, 1, false);
 
                 try {
                     meta.displayName(Component.text(pig.getCustomName()));
