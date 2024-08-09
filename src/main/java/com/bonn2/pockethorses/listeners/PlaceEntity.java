@@ -50,7 +50,7 @@ public class PlaceEntity implements Listener {
         if (event.getBlockFace() == BlockFace.UP && block.isCollidable()) spawnLocation.add(0, 1, 0);
         for (int x = -1; x <= 1; x++)
             for (int z = -1; z <= 1; z++)
-                for (int y = 0; y <= 1; y++)
+                for (int y = 0; y <= 2; y++)
                     if (spawnLocation.getWorld().getBlockAt(spawnLocation.clone().add(x, y, z)).isCollidable())
                         return;
 
@@ -67,6 +67,7 @@ public class PlaceEntity implements Listener {
                 entity.getPassengers().forEach(Entity::remove);
             }
             case "PIG" -> entity = player.getWorld().spawnEntity(spawnLocation, EntityType.PIG);
+            case "CAMEL" -> entity = player.getWorld().spawnEntity(spawnLocation, EntityType.CAMEL);
             default -> {
                 PocketHorses.plugin.getLogger().warning("Unknown Entity Type!");
                 return;

@@ -285,6 +285,36 @@ public class PickupEntity implements Listener {
                 saddle.setItemMeta(meta);
                 player.getInventory().setItemInMainHand(saddle);
             }
+            case CAMEL -> {
+                Camel camel = (Camel) event.getRightClicked();
+                if (camel.getInventory().getSaddle() == null) return;
+                if (!camel.getPassengers().isEmpty()) return;
+
+                NBTEntity nbtCamel = new NBTEntity(camel);
+
+                // Set persistent data in temp item meta
+                ItemMeta meta = saddle.getItemMeta();
+                meta.getPersistentDataContainer().set(typeKey, PersistentDataType.STRING, EntityType.CAMEL.name());
+                meta.getPersistentDataContainer().set(dataKey, PersistentDataType.STRING, nbtCamel.toString());
+                meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+                meta.addEnchant(Enchantment.UNBREAKING, 1, false);
+
+                try {
+                    meta.displayName(Component.text(camel.getCustomName()));
+                } catch (NullPointerException ignored) {}
+
+                List<Component> lore = new ArrayList<>();
+                lore.add(Component.text("§dType: Camel"));
+                lore.add(Component.text(String.format("§cHealth: %d / %d", (int) camel.getHealth(), (int) camel.getMaxHealth())));
+
+                meta.lore(lore);
+
+                camel.remove();
+
+                // Give player the saddle
+                saddle.setItemMeta(meta);
+                player.getInventory().setItemInMainHand(saddle);
+            }
         }
         player.closeInventory();
         event.setCancelled(true);
